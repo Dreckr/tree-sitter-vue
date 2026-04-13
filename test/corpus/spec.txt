@@ -18,9 +18,9 @@ Interpolations - Text (https://vuejs.org/v2/guide/syntax.html#Text)
     (element
       (start_tag
         (tag_name))
-      (text)
-      (interpolation
-        (raw_text))
+      (text
+        (interpolation
+            (raw_text)))
       (end_tag
         (tag_name)))
     (element
@@ -28,9 +28,9 @@ Interpolations - Text (https://vuejs.org/v2/guide/syntax.html#Text)
         (tag_name)
         (directive_attribute
           (directive_name)))
-      (text)
-      (interpolation
-        (raw_text))
+      (text
+        (interpolation
+            (raw_text)))
       (end_tag
         (tag_name)))
     (end_tag
@@ -56,9 +56,9 @@ Interpolations - Raw HTML (https://vuejs.org/v2/guide/syntax.html#Raw-HTML)
     (element
       (start_tag
         (tag_name))
-      (text)
-      (interpolation
-        (raw_text))
+      (text
+        (interpolation
+            (raw_text)))
       (end_tag
         (tag_name)))
     (element
@@ -148,12 +148,13 @@ Interpolations - Using JavaScript Expressions (https://vuejs.org/v2/guide/syntax
   (template_element
     (start_tag
       (tag_name))
-    (interpolation
-      (raw_text))
-    (interpolation
-      (raw_text))
-    (interpolation
-      (raw_text))
+    (text
+        (interpolation
+            (raw_text))
+        (interpolation
+            (raw_text))
+        (interpolation
+            (raw_text)))
     (element
       (start_tag
         (tag_name)
@@ -165,11 +166,12 @@ Interpolations - Using JavaScript Expressions (https://vuejs.org/v2/guide/syntax
       (end_tag
         (tag_name)))
     (comment)
-    (interpolation
-      (raw_text))
-    (comment)
-    (interpolation
-      (raw_text))
+    (text
+        (interpolation
+            (raw_text))
+        (comment)
+        (interpolation
+            (raw_text)))
     (end_tag
       (tag_name))))
 

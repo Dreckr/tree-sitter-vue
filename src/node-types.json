@@ -103,10 +103,6 @@
           "named": true
         },
         {
-          "type": "interpolation",
-          "named": true
-        },
-        {
           "type": "script_element",
           "named": true
         },
@@ -166,10 +162,6 @@
         },
         {
           "type": "erroneous_end_tag",
-          "named": true
-        },
-        {
-          "type": "interpolation",
           "named": true
         },
         {
@@ -380,10 +372,6 @@
           "named": true
         },
         {
-          "type": "interpolation",
-          "named": true
-        },
-        {
           "type": "script_element",
           "named": true
         },
@@ -409,7 +397,17 @@
   {
     "type": "text",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "interpolation",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "\"",
