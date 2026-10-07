@@ -79,10 +79,6 @@
         {
           "type": "SYMBOL",
           "name": "template_element"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "interpolation"
         }
       ]
     },
@@ -465,8 +461,24 @@
       ]
     },
     "text": {
-      "type": "SYMBOL",
-      "name": "_text_fragment"
+      "type": "PREC_RIGHT",
+      "value": 0,
+      "content": {
+        "type": "REPEAT1",
+        "content": {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "interpolation"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "_text_fragment"
+            }
+          ]
+        }
+      }
     },
     "template_element": {
       "type": "SEQ",

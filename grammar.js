@@ -20,7 +20,6 @@ export default grammar(HTML, {
     _node: ($, original) => choice(
       original,
       $.template_element,
-      $.interpolation,
     ),
 
     template_element: $ => seq(
@@ -64,8 +63,7 @@ export default grammar(HTML, {
       '/>',
     ),
 
-
-    text: $ => $._text_fragment,
+    text: $ => prec.right(repeat1(choice($.interpolation, $._text_fragment))),
 
     interpolation: $ => seq(
       '{{',
